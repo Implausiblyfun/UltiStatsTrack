@@ -1,8 +1,8 @@
 package nofolly.ultimatestatstracker;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 
 
-public class LoginScreen extends ActionBarActivity {
+public class LoginScreen extends Activity {
     Bundle thisBundle;
     EditText userName;
     EditText passWord;
@@ -68,7 +68,7 @@ public class LoginScreen extends ActionBarActivity {
         signIn = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent change = new Intent(getApplicationContext(), Home_Page.class);
+                Intent change = new Intent(getApplicationContext(), Welcome_Screen.class);
                 //thisBundle.putSerializable("Player", player);
                 startActivity(change);
             }

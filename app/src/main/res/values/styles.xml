@@ -5,4 +5,9 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="NoTop" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name ="android:windowActionBar">false</item>
+
+    </style>
+
 </resources>
